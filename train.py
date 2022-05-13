@@ -15,9 +15,9 @@ from operation import copy_G_params, load_params, get_dir
 from operation import ImageFolder, InfiniteSamplerWrapper
 from diffaug import DiffAugment
 policy = 'color,translation'
-import lpips
+import lpip
 import time
-percept = lpips.PerceptualLoss(model='net-lin', net='vgg', use_gpu=True)
+percept = lpip.PerceptualLoss(model='net-lin', net='vgg', use_gpu=True)
 _start_time = time.time()
 
 
