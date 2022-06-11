@@ -44,7 +44,7 @@ def load_params(model, new_param):
 
 
 def get_dir(args):
-    task_name = 'train_results/' + args.name
+    task_name = 'D:/model_weight/FastGAN-pytorch/train_results/' + args.name
     saved_model_folder = os.path.join( task_name, 'models')
     saved_image_folder = os.path.join( task_name, 'images')
     

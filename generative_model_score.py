@@ -303,6 +303,8 @@ class GenerativeModelScore:
             self.model_to(device)
             self.lazy_forward(real_forward=True, device=device)
             self.calculate_real_image_statistics()
+            if not os.path.exists('./info_pickle'):
+                os.mkdir('./info_pickle')
             self.save_real_images_info(file_name=full_path)
             self.model_to('cpu')
             print("done")
